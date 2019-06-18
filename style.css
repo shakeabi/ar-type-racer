@@ -1,0 +1,156 @@
+body,html{
+	width: 100%;
+	font-size: 100%;
+	color: #ffffff;
+	text-align: center;
+	background: #F2C14E;
+	background: -webkit-linear-gradient(left, #F2C14E, #F78154); 
+ 	background: -o-linear-gradient(left , #F2C14E, #F78154);/* why vertical gradient is not working?*/
+ 	background: -moz-linear-gradient(left , #F2C14E, #F78154);
+}
+
+@-webkit-keyframes cursor_flash {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #99f;
+  }
+  100% {
+    background: #fff;
+  }
+}
+@keyframes cursor_flash {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #99f;
+  }
+  100% {
+    background: #fff;
+  }
+}
+
+.result{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 20%;
+}
+
+.data{
+	list-style: none;
+	margin: 0px 0px;
+	padding-top:10px; 
+	height:25%;
+	background-color: #000f0f;
+	font-size: 1em;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+.data li{
+	float:left;
+	width: 33.33%;
+	text-align: center;
+}
+
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+}
+
+.container{
+	margin: 20vh auto;
+	width: 50%;
+	min-width:760px; 
+	height: 80%;
+	
+}
+
+
+.output_area {
+	border-radius: 5px;
+	box-sizing: border-box;
+	text-align: left;
+	width: 100%; 
+	height: 60px; 
+	background: #333;
+	-webkit-box-shadow: 0 1px 2px #777;
+	-moz-box-shadow: 0 2px 1px #777;
+	box-shadow: 0 2px 1px #777;
+	font-size: 2em;
+	padding: 20px 10px 0px 10px;
+	position: relative;
+
+  
+}
+
+.output_area:after{
+	content: '';
+	position: absolute;
+ 	width: 13px;
+  	height: 2px;
+  	background: #f00;
+  	left: 10px;
+  	top: 53px;
+  	-webkit-animation: cursor_flash .5s infinite;
+  	animation: cursor_flash .5s infinite;
+}
+
+.output_area:before {
+	border-radius: 5px;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	background: #000;
+  	content: 'TYPE THE GIVEN TEXT';
+  	font-size: 10px;
+  	padding: 5px;
+  	text-align: left;
+  	color: #fff;
+}
+
+.user_area{
+	border-radius: 5px;
+	background: #333;
+	width:100%;
+	min-height:300px;
+	height:300px;
+	margin-top: 30px;
+	font-size: 1.5em;
+	overflow: auto;
+	-webkit-box-shadow: 0 1px 2px #777;
+	-moz-box-shadow: 0 2px 1px #777;
+	box-shadow: 0 2px 1px #777;
+}
+
+#repeat{
+	border-radius: 20px;
+	min-width:100px;
+	width: 100px;
+	height: 40px;
+	margin: 10px auto;
+	background: #333; 
+
+}
+
+#repeat p{
+	padding-top: 10px;
+}
+
+#raw{
+	display:none;
+}
+
+#repeat{
+	cursor: pointer;
+}
