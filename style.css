@@ -1,5 +1,6 @@
 body,html{
-	width: 100%;
+	width: 100vw;
+	box-sizing: border-box;
 	font-size: 100%;
 	color: #ffffff;
 	text-align: center;
@@ -147,7 +148,7 @@ body,html{
 	padding-top: 10px;
 }
 
-#raw{
+#raw0,#raw1,#raw2,#raw3{
 	display:none;
 }
 

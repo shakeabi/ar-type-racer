@@ -1,5 +1,12 @@
+function getRandomInt(min, max) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 var c_length = 47;
-var letters = document.getElementById("raw").innerHTML;
+var randInt = getRandomInt(0,3);console.log(randInt);
+var letters = document.getElementById("raw"+randInt).innerHTML;
 var started = false;
 var index = 0;
 var cur_string = letters.substr(index,c_length);
